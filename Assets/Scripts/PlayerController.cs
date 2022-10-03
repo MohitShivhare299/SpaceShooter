@@ -98,6 +98,8 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         tmp.a = 0.5f;
         gameObject.GetComponent<SpriteRenderer>().color = tmp;
+        fireRate = 0.2f;
+        gameObject.transform.GetChild(1).gameObject.SetActive(false);
         playerDestroyed = false;
 
         yield return new WaitForSeconds(1f);

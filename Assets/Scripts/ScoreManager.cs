@@ -44,7 +44,7 @@ public class ScoreManager : MonoBehaviour
     {
         score += i;
         scoreText.text = $"Score: {score}";
-        gwScoreText.text = $"Score: {score}";
         goScoreText.text = $"Score: {score}";
+        gwScoreText.text = $"Score: {score}";
     }
 }
